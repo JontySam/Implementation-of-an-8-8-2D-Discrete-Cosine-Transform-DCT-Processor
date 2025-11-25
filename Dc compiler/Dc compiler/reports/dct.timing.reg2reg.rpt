@@ -1,0 +1,152 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group reg2reg
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 21:43:48 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: dct32_etapa1/b12_reg_regx1x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dct32_etapa1/shift_add32_1/y13_regx20x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_add32_WIDTH21_test_1 ZeroWireload  N16ADFP_StdCelltt0p8v25c_ccs
+  transpuesta_WIDTH21_test_1 ZeroWireload  N16ADFP_StdCelltt0p8v25c_ccs
+  dct32_WIDTH_X16_WIDTH_Y21_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+  dct                ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  fsm_test_1         ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                                   Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                                   0.00       0.00
+  clock network delay (ideal)                                                             0.00       0.00
+  dct32_etapa1/b12_reg_regx1x/CP (SDFQD4BWP20P90)                               0.00      0.00 #     0.00 r
+  dct32_etapa1/b12_reg_regx1x/Q (SDFQD4BWP20P90)                                0.03      0.06       0.06 f
+  dct32_etapa1/n3 (net)                                    19         0.04                0.00       0.06 f
+  dct32_etapa1/shift_add32_1/b12[1] (shift_add32_WIDTH21_test_1)                          0.00       0.06 f
+  dct32_etapa1/shift_add32_1/b12[1] (net)                             0.04                0.00       0.06 f
+  dct32_etapa1/shift_add32_1/U1597/I (INVD1BWP20P90)                            0.03      0.00       0.06 f
+  dct32_etapa1/shift_add32_1/U1597/ZN (INVD1BWP20P90)                           0.07      0.05       0.12 r
+  dct32_etapa1/shift_add32_1/intadd_222_A[1] (net)         17         0.02                0.00       0.12 r
+  dct32_etapa1/shift_add32_1/U8850/A2 (NR2D1BWP20P90)                           0.07      0.00       0.12 r
+  dct32_etapa1/shift_add32_1/U8850/ZN (NR2D1BWP20P90)                           0.03      0.03       0.14 f
+  dct32_etapa1/shift_add32_1/intadd_172_CI (net)            2         0.00                0.00       0.14 f
+  dct32_etapa1/shift_add32_1/U8849/B (AOI21D1BWP20P90)                          0.03      0.00       0.14 f
+  dct32_etapa1/shift_add32_1/U8849/ZN (AOI21D1BWP20P90)                         0.07      0.05       0.19 r
+  dct32_etapa1/shift_add32_1/intadd_417_B[0] (net)          5         0.01                0.00       0.19 r
+  dct32_etapa1/shift_add32_1/U8004/I (INVD1BWP20P90)                            0.07      0.00       0.19 r
+  dct32_etapa1/shift_add32_1/U8004/ZN (INVD1BWP20P90)                           0.03      0.03       0.22 f
+  dct32_etapa1/shift_add32_1/intadd_631_B[0] (net)          2         0.00                0.00       0.22 f
+  dct32_etapa1/shift_add32_1/intadd_631_U4/A (FA1D1BWP20P90)                    0.03      0.00       0.22 f
+  dct32_etapa1/shift_add32_1/intadd_631_U4/S (FA1D1BWP20P90)                    0.02      0.06       0.28 r
+  dct32_etapa1/shift_add32_1/intadd_342_A[1] (net)          1         0.00                0.00       0.28 r
+  dct32_etapa1/shift_add32_1/intadd_342_U5/B (FA1D1BWP20P90)                    0.02      0.00       0.28 r
+  dct32_etapa1/shift_add32_1/intadd_342_U5/S (FA1D1BWP20P90)                    0.02      0.05       0.33 f
+  dct32_etapa1/shift_add32_1/intadd_342_SUM[1] (net)        1         0.00                0.00       0.33 f
+  dct32_etapa1/shift_add32_1/intadd_76_U17/B (FA1D1BWP20P90)                    0.02      0.00       0.33 f
+  dct32_etapa1/shift_add32_1/intadd_76_U17/CO (FA1D1BWP20P90)                   0.02      0.03       0.36 f
+  dct32_etapa1/shift_add32_1/intadd_76_n16 (net)            1         0.00                0.00       0.36 f
+  dct32_etapa1/shift_add32_1/intadd_76_U16/CI (FA1D1BWP20P90)                   0.02      0.00       0.36 f
+  dct32_etapa1/shift_add32_1/intadd_76_U16/CO (FA1D1BWP20P90)                   0.02      0.03       0.40 f
+  dct32_etapa1/shift_add32_1/intadd_76_n15 (net)            1         0.00                0.00       0.40 f
+  dct32_etapa1/shift_add32_1/intadd_76_U15/CI (FA1D1BWP20P90)                   0.02      0.00       0.40 f
+  dct32_etapa1/shift_add32_1/intadd_76_U15/CO (FA1D1BWP20P90)                   0.02      0.03       0.43 f
+  dct32_etapa1/shift_add32_1/intadd_76_n14 (net)            1         0.00                0.00       0.43 f
+  dct32_etapa1/shift_add32_1/intadd_76_U14/CI (FA1D1BWP20P90)                   0.02      0.00       0.43 f
+  dct32_etapa1/shift_add32_1/intadd_76_U14/CO (FA1D1BWP20P90)                   0.02      0.03       0.46 f
+  dct32_etapa1/shift_add32_1/intadd_76_n13 (net)            1         0.00                0.00       0.46 f
+  dct32_etapa1/shift_add32_1/intadd_76_U13/CI (FA1D1BWP20P90)                   0.02      0.00       0.46 f
+  dct32_etapa1/shift_add32_1/intadd_76_U13/CO (FA1D1BWP20P90)                   0.02      0.03       0.49 f
+  dct32_etapa1/shift_add32_1/intadd_76_n12 (net)            1         0.00                0.00       0.49 f
+  dct32_etapa1/shift_add32_1/intadd_76_U12/CI (FA1D1BWP20P90)                   0.02      0.00       0.49 f
+  dct32_etapa1/shift_add32_1/intadd_76_U12/CO (FA1D1BWP20P90)                   0.02      0.03       0.53 f
+  dct32_etapa1/shift_add32_1/intadd_76_n11 (net)            1         0.00                0.00       0.53 f
+  dct32_etapa1/shift_add32_1/intadd_76_U11/CI (FA1D1BWP20P90)                   0.02      0.00       0.53 f
+  dct32_etapa1/shift_add32_1/intadd_76_U11/CO (FA1D1BWP20P90)                   0.02      0.03       0.56 f
+  dct32_etapa1/shift_add32_1/intadd_76_n10 (net)            1         0.00                0.00       0.56 f
+  dct32_etapa1/shift_add32_1/intadd_76_U10/CI (FA1D1BWP20P90)                   0.02      0.00       0.56 f
+  dct32_etapa1/shift_add32_1/intadd_76_U10/CO (FA1D1BWP20P90)                   0.02      0.03       0.59 f
+  dct32_etapa1/shift_add32_1/intadd_76_n9 (net)             1         0.00                0.00       0.59 f
+  dct32_etapa1/shift_add32_1/intadd_76_U9/CI (FA1D1BWP20P90)                    0.02      0.00       0.59 f
+  dct32_etapa1/shift_add32_1/intadd_76_U9/CO (FA1D1BWP20P90)                    0.02      0.03       0.63 f
+  dct32_etapa1/shift_add32_1/intadd_76_n8 (net)             1         0.00                0.00       0.63 f
+  dct32_etapa1/shift_add32_1/intadd_76_U8/CI (FA1D1BWP20P90)                    0.02      0.00       0.63 f
+  dct32_etapa1/shift_add32_1/intadd_76_U8/CO (FA1D1BWP20P90)                    0.02      0.03       0.66 f
+  dct32_etapa1/shift_add32_1/intadd_76_n7 (net)             1         0.00                0.00       0.66 f
+  dct32_etapa1/shift_add32_1/intadd_76_U7/CI (FA1D1BWP20P90)                    0.02      0.00       0.66 f
+  dct32_etapa1/shift_add32_1/intadd_76_U7/CO (FA1D1BWP20P90)                    0.02      0.03       0.69 f
+  dct32_etapa1/shift_add32_1/intadd_76_n6 (net)             1         0.00                0.00       0.69 f
+  dct32_etapa1/shift_add32_1/intadd_76_U6/CI (FA1D1BWP20P90)                    0.02      0.00       0.69 f
+  dct32_etapa1/shift_add32_1/intadd_76_U6/CO (FA1D1BWP20P90)                    0.02      0.03       0.73 f
+  dct32_etapa1/shift_add32_1/intadd_76_n5 (net)             1         0.00                0.00       0.73 f
+  dct32_etapa1/shift_add32_1/intadd_76_U5/CI (FA1D1BWP20P90)                    0.02      0.00       0.73 f
+  dct32_etapa1/shift_add32_1/intadd_76_U5/CO (FA1D1BWP20P90)                    0.02      0.03       0.76 f
+  dct32_etapa1/shift_add32_1/intadd_76_n4 (net)             1         0.00                0.00       0.76 f
+  dct32_etapa1/shift_add32_1/intadd_76_U4/CI (FA1D1BWP20P90)                    0.02      0.00       0.76 f
+  dct32_etapa1/shift_add32_1/intadd_76_U4/CO (FA1D1BWP20P90)                    0.02      0.03       0.79 f
+  dct32_etapa1/shift_add32_1/intadd_76_n3 (net)             1         0.00                0.00       0.79 f
+  dct32_etapa1/shift_add32_1/intadd_76_U3/CI (FA1D1BWP20P90)                    0.02      0.00       0.79 f
+  dct32_etapa1/shift_add32_1/intadd_76_U3/CO (FA1D1BWP20P90)                    0.02      0.03       0.82 f
+  dct32_etapa1/shift_add32_1/intadd_76_n2 (net)             1         0.00                0.00       0.82 f
+  dct32_etapa1/shift_add32_1/intadd_76_U2/CI (FA1D1BWP20P90)                    0.02      0.00       0.82 f
+  dct32_etapa1/shift_add32_1/intadd_76_U2/S (FA1D1BWP20P90)                     0.02      0.05       0.88 r
+  dct32_etapa1/shift_add32_1/intadd_32_A[18] (net)          1         0.00                0.00       0.88 r
+  dct32_etapa1/shift_add32_1/intadd_32_U2/B (FA1D1BWP20P90)                     0.02      0.00       0.88 r
+  dct32_etapa1/shift_add32_1/intadd_32_U2/CO (FA1D1BWP20P90)                    0.01      0.03       0.90 r
+  dct32_etapa1/shift_add32_1/intadd_32_n1 (net)             1         0.00                0.00       0.90 r
+  dct32_etapa1/shift_add32_1/U89/A4 (XOR4D1BWP20P90)                            0.01      0.00       0.90 r
+  dct32_etapa1/shift_add32_1/U89/Z (XOR4D1BWP20P90)                             0.02      0.05       0.95 f
+  dct32_etapa1/shift_add32_1/n1585 (net)                    1         0.00                0.00       0.95 f
+  dct32_etapa1/shift_add32_1/U162/A2 (XNR4D1BWP20P90)                           0.02      0.00       0.95 f
+  dct32_etapa1/shift_add32_1/U162/ZN (XNR4D1BWP20P90)                           0.02      0.06       1.01 f
+  dct32_etapa1/shift_add32_1/n1587 (net)                    1         0.00                0.00       1.01 f
+  dct32_etapa1/shift_add32_1/U79/A4 (XNR4D1BWP20P90)                            0.02      0.00       1.01 f
+  dct32_etapa1/shift_add32_1/U79/ZN (XNR4D1BWP20P90)                            0.02      0.05       1.06 f
+  dct32_etapa1/shift_add32_1/n1589 (net)                    1         0.00                0.00       1.06 f
+  dct32_etapa1/shift_add32_1/U366/A3 (XOR3D2BWP20P90)                           0.02      0.00       1.06 f
+  dct32_etapa1/shift_add32_1/U366/Z (XOR3D2BWP20P90)                            0.01      0.04       1.09 f
+  dct32_etapa1/shift_add32_1/n1831 (net)                    3         0.00                0.00       1.09 f
+  dct32_etapa1/shift_add32_1/U123/A1 (XNR4D1BWP20P90)                           0.01      0.00       1.09 f
+  dct32_etapa1/shift_add32_1/U123/ZN (XNR4D1BWP20P90)                           0.02      0.05       1.14 r
+  dct32_etapa1/shift_add32_1/n1833 (net)                    2         0.00                0.00       1.14 r
+  dct32_etapa1/shift_add32_1/U289/A2 (NR2D1BWP20P90)                            0.02      0.00       1.14 r
+  dct32_etapa1/shift_add32_1/U289/ZN (NR2D1BWP20P90)                            0.01      0.01       1.15 f
+  dct32_etapa1/shift_add32_1/n1832 (net)                    1         0.00                0.00       1.15 f
+  dct32_etapa1/shift_add32_1/U305/C (AOI211D1BWP20P90)                          0.01      0.00       1.15 f
+  dct32_etapa1/shift_add32_1/U305/ZN (AOI211D1BWP20P90)                         0.03      0.02       1.17 r
+  dct32_etapa1/shift_add32_1/N149 (net)                     1         0.00                0.00       1.17 r
+  dct32_etapa1/shift_add32_1/y13_regx20x/D (SDFQD2BWP16P90)                     0.03      0.00       1.17 r
+  data arrival time                                                                                  1.17
+
+  clock CLK (rise edge)                                                                   1.20       1.20
+  clock network delay (ideal)                                                             0.00       1.20
+  dct32_etapa1/shift_add32_1/y13_regx20x/CP (SDFQD2BWP16P90)                              0.00       1.20 r
+  library setup time                                                                     -0.03       1.17
+  data required time                                                                                 1.17
+  ----------------------------------------------------------------------------------------------------------
+  data required time                                                                                 1.17
+  data arrival time                                                                                 -1.17
+  ----------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                        0.00
+
+
+1
+LOGNAME = chint078

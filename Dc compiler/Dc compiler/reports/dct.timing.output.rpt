@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group output
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 21:43:48 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: transpuesta0/temp_regx31xx31xx20x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: test_so (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  shift_add32_WIDTH21_test_1 ZeroWireload  N16ADFP_StdCelltt0p8v25c_ccs
+  transpuesta_WIDTH21_test_1 ZeroWireload  N16ADFP_StdCelltt0p8v25c_ccs
+  dct32_WIDTH_X16_WIDTH_Y21_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+  dct                ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  fsm_test_1         ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                          Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                          0.00       0.00
+  clock network delay (ideal)                                                    0.00       0.00
+  transpuesta0/temp_regx31xx31xx20x/CP (SDFQD1BWP20P90)                0.00      0.00 #     0.00 r
+  transpuesta0/temp_regx31xx31xx20x/Q (SDFQD1BWP20P90)                 0.02      0.06       0.06 f
+  transpuesta0/test_so (net)                       3         0.01                0.00       0.06 f
+  transpuesta0/test_so (transpuesta_WIDTH21_test_1)                              0.00       0.06 f
+  test_so (net)                                              0.01                0.00       0.06 f
+  test_so (out)                                                        0.02      0.00       0.06 f
+  data arrival time                                                                         0.06
+
+  clock CLK (rise edge)                                                          1.20       1.20
+  clock network delay (ideal)                                                    0.00       1.20
+  output external delay                                                         -0.06       1.14
+  data required time                                                                        1.14
+  -------------------------------------------------------------------------------------------------
+  data required time                                                                        1.14
+  data arrival time                                                                        -0.06
+  -------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               1.08
+
+
+1
+LOGNAME = chint078

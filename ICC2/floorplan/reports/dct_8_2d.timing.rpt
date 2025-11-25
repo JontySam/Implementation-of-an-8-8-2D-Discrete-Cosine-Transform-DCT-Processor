@@ -1,0 +1,112 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Mon Dec  2 02:57:41 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_odd_regx1xx6x (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_dct_out_regx1xx11x (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: reg2reg
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_odd_regx1xx6x/CP (SDFCNQD1BWP20P90)
+                                                   0.00      0.00 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_odd_regx1xx6x/Q (SDFCNQD1BWP20P90)
+                                                   0.08      0.08 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/RBINV_4497/ZN (INVD1BWP16P90)
+                                                   0.04      0.12 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_283_U4/CO (FA1D1BWP20P90)
+                                                   0.04      0.16 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_283_U3/S (FA1D1BWP20P90)
+                                                   0.04      0.20 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/RBINV_4401/ZN (INVD1BWP16P90)
+                                                   0.01      0.21 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U13/S (FA1D1BWP20P90)
+                                                   0.04      0.26 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/RBINV_4405/ZN (INVD1BWP16P90)
+                                                   0.01      0.27 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U876/CO (FA1D1BWP20P90)
+                                                   0.03      0.29 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/RBINV_4587/ZN (INVD1BWP16P90)
+                                                   0.01      0.30 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U12/CO (FA1D1BWP20P90)
+                                                   0.03      0.34 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U11/CO (FA1D1BWP20P90)
+                                                   0.03      0.37 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U10/CO (FA1D1BWP20P90)
+                                                   0.03      0.41 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U9/CO (FA1D1BWP20P90)
+                                                   0.03      0.44 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U8/CO (FA1D1BWP20P90)
+                                                   0.03      0.47 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U7/CO (FA1D1BWP20P90)
+                                                   0.03      0.51 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U6/CO (FA1D1BWP20P90)
+                                                   0.03      0.54 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U5/CO (FA1D1BWP20P90)
+                                                   0.03      0.58 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U4/CO (FA1D1BWP20P90)
+                                                   0.03      0.61 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U3/CO (FA1D1BWP20P90)
+                                                   0.03      0.64 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/intadd_265_U2/CO (FA1D1BWP20P90)
+                                                   0.04      0.68 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U37/Z (AO21D1BWP20P90)
+                                                   0.03      0.70 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U240/ZN (NR2D1BWP20P90)
+                                                   0.02      0.72 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U33/Z (AN2D1BWP20P90)
+                                                   0.02      0.75 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U237/ZN (ND2D1BWP20P90)
+                                                   0.02      0.77 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U234/ZN (NR2D1BWP20P90)
+                                                   0.02      0.79 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U7/ZN (ND2D1BWP20P90)
+                                                   0.02      0.81 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U231/ZN (NR2D1BWP20P90)
+                                                   0.02      0.82 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U230/ZN (ND2D1BWP20P90)
+                                                   0.02      0.84 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U227/ZN (NR2D1BWP20P90)
+                                                   0.02      0.86 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U226/ZN (ND2D1BWP20P90)
+                                                   0.02      0.88 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U225/ZN (NR2D1BWP20P90)
+                                                   0.02      0.90 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U224/ZN (ND2D1BWP20P90)
+                                                   0.01      0.91 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U20/ZN (XNR2D1BWP20P90)
+                                                   0.03      0.95 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_dct_out_regx1xx11x/D (SDFCNQD1BWP20P90)
+                                                   0.00      0.95 r
+  data arrival time                                          0.95
+
+  clock CLK (rise edge)                            1.20      1.20
+  clock network delay (ideal)                      0.00      1.20
+  clock reconvergence pessimism                    0.00      1.20
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_dct_out_regx1xx11x/CP (SDFCNQD1BWP20P90)
+                                                   0.00      1.20 r
+  library setup time                              -0.03      1.17
+  data required time                                         1.17
+  ------------------------------------------------------------------------
+  data required time                                         1.17
+  data arrival time                                         -0.95
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.22
+
+
+1

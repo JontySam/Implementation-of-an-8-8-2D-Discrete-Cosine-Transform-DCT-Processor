@@ -1,0 +1,122 @@
+ 
+****************************************
+Report : qor
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 21:43:33 2024
+****************************************
+
+
+  Timing Path Group 'comb'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          0.68
+  Critical Path Slack:           0.44
+  Critical Path Clk Period:      1.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'inputs'
+  -----------------------------------
+  Levels of Logic:               9.00
+  Critical Path Length:          1.14
+  Critical Path Slack:           0.02
+  Critical Path Clk Period:      1.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'output'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.06
+  Critical Path Slack:           1.08
+  Critical Path Clk Period:      1.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2reg'
+  -----------------------------------
+  Levels of Logic:              30.00
+  Critical Path Length:          1.17
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      1.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          5
+  Hierarchical Port Count:       4892
+  Leaf Cell Count:              87751
+  Buf/Inv Cell Count:            4822
+  Buf Cell Count:                 230
+  Inv Cell Count:                4592
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     64804
+  Sequential Cell Count:        22947
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    24664.902626
+  Noncombinational Area: 26172.047032
+  Buf/Inv Area:            788.175392
+  Total Buffer Area:            72.32
+  Total Inverter Area:         715.86
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             50836.949657
+  Design Area:           50836.949657
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         96407
+  Nets With Violations:             1
+  Max Trans Violations:             1
+  Max Cap Violations:               1
+  -----------------------------------
+
+
+  Hostname: ece-martigny
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.06
+  Logic Optimization:                 10.73
+  Mapping Optimization:              467.81
+  -----------------------------------------
+  Overall Compile Time:              768.15
+  Overall Compile Wall Clock Time:   773.28
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

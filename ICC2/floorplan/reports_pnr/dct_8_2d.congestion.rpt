@@ -1,0 +1,17 @@
+Warning: The congestion map is out dated. Specify -rerun_global_router option to regenerate one.
+
+****************************************
+Report : congestion
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Mon Dec  2 11:07:08 2024
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |     187 |     2 |     179  ( 0.12%) |       8
+H routing |      38 |     1 |      38  ( 0.05%) |      38
+V routing |     149 |     2 |     141  ( 0.18%) |       8
+
+1

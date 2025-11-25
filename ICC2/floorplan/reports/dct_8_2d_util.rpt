@@ -1,0 +1,24 @@
+****************************************
+Report : report_utilization
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Tue Dec  3 01:37:35 2024
+****************************************
+Utilization Ratio:			0.7094
+Utilization options:
+ - Area calculation based on:		site_row of block full_chip_dct_8_2d
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				24928.3008
+Total Capacity Area:			24853.0810
+Total Area of cells:			17630.5766
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.7094
+
+0.7094

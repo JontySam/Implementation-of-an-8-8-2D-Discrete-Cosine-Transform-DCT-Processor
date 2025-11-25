@@ -1,0 +1,52 @@
+(SAIFILE
+(SAIFVERSION "2.0")
+(DIRECTION "backward")
+(DESIGN "full_chip_dct_8_2d")
+(DATE "Mon Dec  2 19:11:53 2024")
+(VENDOR "Synopsys, Inc")
+(PROGRAM_NAME "ICC2 write_saif")
+(PROGRAM_VERSION "1.0")
+(DIVIDER / )
+(TIMESCALE 1 ns)
+(DURATION 1)
+(INSTANCE full_chip_dct_8_2d
+   (INSTANCE dct_8_2d_inst
+      (INSTANCE ROW_DCT_GENx0x_row_dct_inst
+      )
+      (INSTANCE ROW_DCT_GENx1x_row_dct_inst
+      )
+      (INSTANCE ROW_DCT_GENx2x_row_dct_inst
+      )
+      (INSTANCE ROW_DCT_GENx3x_row_dct_inst
+      )
+      (INSTANCE ROW_DCT_GENx4x_row_dct_inst
+      )
+      (INSTANCE ROW_DCT_GENx5x_row_dct_inst
+      )
+      (INSTANCE ROW_DCT_GENx6x_row_dct_inst
+      )
+      (INSTANCE ROW_DCT_GENx7x_row_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx0x_col_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx1x_col_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx2x_col_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx3x_col_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx4x_col_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx5x_col_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx6x_col_dct_inst
+      )
+      (INSTANCE COL_DCT_GENx7x_col_dct_inst
+      )
+      (INSTANCE clk_gate_transposed_data_regx0xx0x
+      )
+      (INSTANCE clk_gate_dct_out_regx0xx0x
+      )
+   )
+)
+)

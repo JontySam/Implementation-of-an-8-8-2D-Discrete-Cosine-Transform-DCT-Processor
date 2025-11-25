@@ -1,0 +1,6 @@
+outputs_pnr/dct_8_2d.spef.full_chip_dct_8_2d.tlu_max_25.spef.gz for scenarios: 
+	 scenario: default, corner type: late
+
+outputs_pnr/dct_8_2d.spef.full_chip_dct_8_2d.tlu_min_25.spef.gz for scenarios: 
+	 scenario: default, corner type: early
+

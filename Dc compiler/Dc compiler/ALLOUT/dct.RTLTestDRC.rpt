@@ -1,0 +1,38 @@
+In mode: all_dft...
+Information: Checking out the license 'DesignWare'. (SEC-104)
+  Pre-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Building model 'DW01_MUX'
+  Building model 'DW01_mmux_width2'
+  Building model 'DW01_mmux_width3'
+  Building model 'DW01_mmux_width4'
+  Building model 'DW01_mmux_width5'
+Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'ZeroWireload'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'ZeroWireload'. (OPT-170)
+  Loading test protocol
+  ...checking vector rules...
+  ...checking pre-dft rules...
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 0
+
+-----------------------------------------------------------------
+
+
+Test Design rule checking did not find violations
+Information: Test design rule checking completed. (TEST-123)
+Warning: The current design contains unmapped components. The output netlist might not be read back into the system. (TEST-268)
+1

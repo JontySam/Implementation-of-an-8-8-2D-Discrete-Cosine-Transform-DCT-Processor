@@ -1,0 +1,67 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+        -verbose
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 03:49:21 2024
+****************************************
+
+
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c_ccs (File: /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db)
+
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dct                    ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+dct32_WIDTH_X16_WIDTH_Y32_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+scaling1_WIDTH32       ZeroWireload      N16ADFP_StdCelltt0p8v25c_ccs
+transpuesta_WIDTH32_test_1 ZeroWireload  N16ADFP_StdCelltt0p8v25c_ccs
+dct8puntos_WIDTH_X32_WIDTH_Y32_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  11.5960  W   (98%)
+  Net Switching Power  = 276.5881 mW    (2%)
+                         ---------
+Total Dynamic Power    =  11.8726  W  (100%)
+
+Cell Leakage Power     = 219.6520 uW
+
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network     85.2857          266.9028        1.7725e+03          352.1867  (   2.97%)            3950 i
+register       1.1499e+04            0.7268        1.3940e+05        1.1500e+04  (  96.86%)            38964
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+combinational     11.1918            8.9541        7.8484e+04           20.2225  (   0.17%)            131781
+---------------------------------------------------------------------------------------------------------
+Total          1.1596e+04 mW       276.5837 mW     2.1965e+05 nW     1.1873e+04 mW
+1
+LOGNAME = chint078

@@ -1,0 +1,9 @@
+
+  Linking design 'dct'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  dct                         /home/class/chint078/labs/project_lab/dct.db
+  N16ADFP_StdCelltt0p8v25c_ccs (library) /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db
+  dw_foundation.sldb (library) /home/vlsilab/synopsys/syn.2018/libraries/syn/dw_foundation.sldb
+
+1

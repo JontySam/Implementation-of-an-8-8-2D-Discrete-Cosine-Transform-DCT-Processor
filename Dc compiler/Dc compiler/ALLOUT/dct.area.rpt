@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : area
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 03:48:48 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'dct' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c_ccs (File: /home/vlsilab2/TSMCHOME/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCelltt0p8v25c_ccs.db)
+
+Number of ports:                         7709
+Number of nets:                        210059
+Number of cells:                       174764
+Number of combinational cells:         135731
+Number of sequential cells:             38965
+Number of macros/black boxes:               0
+Number of buf/inv:                      10555
+Number of references:                     171
+
+Combinational area:              62749.107870
+Buf/Inv area:                     1720.154950
+Noncombinational area:           44441.811535
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                107190.919406
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+LOGNAME = chint078

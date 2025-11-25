@@ -1,0 +1,241 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Mon Dec  2 19:05:20 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dct_odd_inst_odd_regx1xx6x (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dct_odd_inst_dct_out_regx1xx11x (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: reg2reg
+  Path Type: max
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.18      0.18
+
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dct_odd_inst_odd_regx1xx6x/CP (SDFCNQD1BWP16P90)
+                                                                     0.14      0.00      0.18 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dct_odd_inst_odd_regx1xx6x/Q (SDFCNQD1BWP16P90)
+                                                                     0.06      0.09      0.27 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dftopt271_gOb1770 (net)
+                                                    8      0.02
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4250/I (INVD1BWP20P90)
+                                                                     0.06      0.00      0.28 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4250/ZN (INVD1BWP20P90)
+                                                                     0.04      0.04      0.32 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/net_aps_4250 (net)
+                                                    5      0.01
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_256_U4/A (FA1D1BWP20P90)
+                                                                     0.04      0.00      0.32 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_256_U4/CO (FA1D1BWP20P90)
+                                                                     0.01      0.04      0.35 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_256_n3 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_256_U3/CI (FA1D1BWP20P90)
+                                                                     0.01      0.00      0.36 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_256_U3/S (FA1D1BWP20P90)
+                                                                     0.01      0.04      0.40 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_256_SUM[1] (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4112/I (INVD1BWP20P90)
+                                                                     0.01      0.00      0.40 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4112/ZN (INVD1BWP20P90)
+                                                                     0.01      0.01      0.41 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/net_aps_4112 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U13/A (FA1D1BWP20P90)
+                                                                     0.01      0.00      0.41 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U13/S (FA1D1BWP20P90)
+                                                                     0.01      0.04      0.45 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_SUM[1] (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4116/I (INVD1BWP20P90)
+                                                                     0.01      0.00      0.45 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4116/ZN (INVD1BWP20P90)
+                                                                     0.01      0.01      0.47 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/net_aps_4116 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U906/A (FA1D1BWP20P90)   0.01      0.00      0.47 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U906/CO (FA1D1BWP20P90)
+                                                                     0.01      0.03      0.49 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n365 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4324/I (INVD1BWP20P90)
+                                                                     0.01      0.00      0.49 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/RBINV_4324/ZN (INVD1BWP20P90)
+                                                                     0.01      0.01      0.50 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/net_aps_4324 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U12/A (FA1D1BWP20P90)
+                                                                     0.01      0.00      0.50 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U12/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.54 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n11 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U11/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.54 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U11/CO (FA1D1BWP20P90)
+                                                                     0.02      0.04      0.57 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n10 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U10/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.57 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U10/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.61 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n9 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U9/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.61 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U9/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.64 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n8 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U8/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.64 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U8/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.67 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n7 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U7/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.67 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U7/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.71 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n6 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U6/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.71 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U6/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.74 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n5 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U5/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.74 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U5/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.77 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n4 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U4/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.77 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U4/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.81 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n3 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U3/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.81 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U3/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.84 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n2 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U2/CI (FA1D1BWP20P90)
+                                                                     0.02      0.00      0.84 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_U2/CO (FA1D1BWP20P90)
+                                                                     0.02      0.03      0.87 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/intadd_242_n1 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U37/B (AO21D1BWP20P90)   0.02      0.00      0.87 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U37/Z (AO21D1BWP20P90)   0.01      0.03      0.90 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n283 (net)
+                                                    2      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U213/A2 (NR2D1BWP20P90)
+                                                                     0.01      0.00      0.90 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U213/ZN (NR2D1BWP20P90)
+                                                                     0.02      0.02      0.92 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n759 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U32/A2 (AN2D1BWP20P90)   0.02      0.00      0.92 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U32/Z (AN2D1BWP20P90)    0.01      0.02      0.94 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n954 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U211/A2 (ND2D1BWP20P90)
+                                                                     0.01      0.00      0.94 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U211/ZN (ND2D1BWP20P90)
+                                                                     0.02      0.02      0.96 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n953 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U208/A2 (NR2D1BWP20P90)
+                                                                     0.02      0.00      0.96 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U208/ZN (NR2D1BWP20P90)
+                                                                     0.02      0.02      0.98 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n952 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U207/A2 (ND2D1BWP20P90)
+                                                                     0.02      0.00      0.98 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U207/ZN (ND2D1BWP20P90)
+                                                                     0.02      0.02      1.00 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n951 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U204/A2 (NR2D1BWP20P90)
+                                                                     0.02      0.00      1.00 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U204/ZN (NR2D1BWP20P90)
+                                                                     0.02      0.02      1.02 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n950 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U202/A2 (ND2D1BWP20P90)
+                                                                     0.02      0.00      1.02 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U202/ZN (ND2D1BWP20P90)
+                                                                     0.02      0.02      1.04 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n949 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U203/A2 (NR2D1BWP20P90)
+                                                                     0.02      0.00      1.04 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U203/ZN (NR2D1BWP20P90)
+                                                                     0.02      0.02      1.06 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n948 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U201/A2 (ND2D1BWP20P90)
+                                                                     0.02      0.00      1.06 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U201/ZN (ND2D1BWP20P90)
+                                                                     0.02      0.02      1.08 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n947 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U200/A2 (NR2D1BWP20P90)
+                                                                     0.02      0.00      1.08 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U200/ZN (NR2D1BWP20P90)
+                                                                     0.02      0.02      1.10 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n946 (net)
+                                                    3      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U199/A2 (ND2D1BWP20P90)
+                                                                     0.02      0.00      1.10 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U199/ZN (ND2D1BWP20P90)
+                                                                     0.02      0.02      1.12 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/n945 (net)
+                                                    2      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U15/A2 (XNR2D1BWP20P90)
+                                                                     0.02      0.00      1.12 f
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/U15/ZN (XNR2D1BWP20P90)
+                                                                     0.01      0.03      1.15 r
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dct_odd_inst_N178 (net)
+                                                    1      0.00
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dct_odd_inst_dct_out_regx1xx11x/D (SDFCNQD1BWP16P90)
+                                                                     0.01      0.00      1.15 r
+  data arrival time                                                                      1.15
+
+  clock CLK (rise edge)                                                        1.20      1.20
+  clock network delay (propagated)                                             0.15      1.35
+  clock reconvergence pessimism                                                0.00      1.35
+  dct_8_2d_inst/COL_DCT_GENx3x_col_dct_inst/dct_odd_inst_dct_out_regx1xx11x/CP (SDFCNQD1BWP16P90)
+                                                                     0.08      0.00      1.35 r
+  library setup time                                                          -0.02      1.33
+  data required time                                                                     1.33
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     1.33
+  data arrival time                                                                     -1.15
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.18
+
+
+1

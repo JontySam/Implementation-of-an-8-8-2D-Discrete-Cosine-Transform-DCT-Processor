@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group inputs
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 03:49:31 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: rst (input port clocked by CLK)
+  Endpoint: transpuesta0/temp_regx9xx31xx9x
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: inputs
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dct                ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  dct32_WIDTH_X16_WIDTH_Y32_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+  dct8puntos_WIDTH_X32_WIDTH_Y32_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+  transpuesta_WIDTH32_test_1 ZeroWireload  N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                       0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  input external delay                                                        0.02       0.02 f
+  rst (in)                                                          0.02      0.01       0.03 f
+  rst (net)                                     6         0.01                0.00       0.03 f
+  U16967/I (CKND2BWP20P90)                                          0.02      0.00       0.03 f
+  U16967/ZN (CKND2BWP20P90)                                         0.10      0.06       0.09 r
+  n3177 (net)                                  62         0.06                0.00       0.09 r
+  U1875/I (CKND8BWP20P90)                                           0.10      0.00       0.09 r
+  U1875/ZN (CKND8BWP20P90)                                          0.19      0.14       0.24 f
+  n65 (net)                                   457         0.41                0.00       0.24 f
+  transpuesta0/rst (transpuesta_WIDTH32_test_1)                               0.00       0.24 f
+  transpuesta0/rst (net)                                  0.41                0.00       0.24 f
+  transpuesta0/U441/B1 (INR2D4BWP20P90)                             0.19      0.00       0.24 f
+  transpuesta0/U441/ZN (INR2D4BWP20P90)                             0.25      0.20       0.44 r
+  transpuesta0/n777 (net)                     150         0.15                0.00       0.44 r
+  transpuesta0/U14341/I (CKND2BWP20P90)                             0.25      0.00       0.44 r
+  transpuesta0/U14341/ZN (CKND2BWP20P90)                            0.17      0.16       0.60 f
+  transpuesta0/n1237 (net)                     73         0.08                0.00       0.60 f
+  transpuesta0/U14214/I (CKND1BWP20P90)                             0.17      0.00       0.60 f
+  transpuesta0/U14214/ZN (CKND1BWP20P90)                            0.25      0.20       0.81 r
+  transpuesta0/n28633 (net)                    67         0.07                0.00       0.81 r
+  transpuesta0/U14215/I (BUFFD1BWP20P90)                            0.25      0.00       0.81 r
+  transpuesta0/U14215/Z (BUFFD1BWP20P90)                            0.17      0.13       0.93 r
+  transpuesta0/n257 (net)                      48         0.05                0.00       0.93 r
+  transpuesta0/U1430/I (BUFFD2BWP16P90)                             0.17      0.00       0.93 r
+  transpuesta0/U1430/Z (BUFFD2BWP16P90)                             0.27      0.18       1.11 r
+  transpuesta0/n65003 (net)                   169         0.17                0.00       1.11 r
+  transpuesta0/U14115/B2 (AO22D1BWP20P90)                           0.27      0.00       1.11 r
+  transpuesta0/U14115/Z (AO22D1BWP20P90)                            0.01      0.05       1.16 r
+  transpuesta0/n64112 (net)                     1         0.00                0.00       1.16 r
+  transpuesta0/temp_regx9xx31xx9x/D (SDFQD1BWP20P90)                0.01      0.00       1.16 r
+  data arrival time                                                                      1.16
+
+  clock CLK (rise edge)                                                       1.20       1.20
+  clock network delay (ideal)                                                 0.00       1.20
+  transpuesta0/temp_regx9xx31xx9x/CP (SDFQD1BWP20P90)                         0.00       1.20 r
+  library setup time                                                         -0.03       1.17
+  data required time                                                                     1.17
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     1.17
+  data arrival time                                                                     -1.16
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1
+LOGNAME = chint078

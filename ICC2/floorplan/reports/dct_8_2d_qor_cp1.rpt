@@ -1,0 +1,108 @@
+****************************************
+Report : qor
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Mon Dec  2 02:57:44 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+
+Scenario           'default'
+Timing Path Group  'inputs'
+----------------------------------------
+Levels of Logic:                     13
+Critical Path Length:              0.45
+Critical Path Slack:               0.71
+Critical Path Clk Period:          1.20
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.02
+Total Hold Violation:           -111.00
+No. of Hold Violations:            6162
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'output'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.11
+Critical Path Slack:               1.03
+Critical Path Clk Period:          1.20
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'reg2reg'
+----------------------------------------
+Levels of Logic:                     32
+Critical Path Length:              0.95
+Critical Path Slack:               0.22
+Critical Path Clk Period:          1.20
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:             19
+Hierarchical Port Count:           8944
+Leaf Cell Count:                  29706
+Buf/Inv Cell Count:                5454
+Buf Cell Count:                       0
+Inv Cell Count:                    5454
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         23542
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:             6164
+   Integrated Clock-Gating Cell Count:                     2
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       6162
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             9051.99
+Noncombinational Area:          8307.05
+Buf/Inv Area:                    848.21
+Total Buffer Area:                 0.00
+Total Inverter Area:             848.21
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                  115995.40
+Net YLength:                  106028.39
+----------------------------------------
+Cell Area (netlist):                          17359.04
+Cell Area (netlist and physical only):        17359.04
+Net Length:                   222023.79
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             35349
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

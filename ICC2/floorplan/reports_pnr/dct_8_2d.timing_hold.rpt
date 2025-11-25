@@ -1,0 +1,60 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Mon Dec  2 19:05:20 2024
+****************************************
+Information: Timer using 'CRPR'. (TIM-050)
+
+  Startpoint: dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/even_regx3xx0x (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_even_regx0xx0x (rising edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: reg2reg
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.13      0.13
+
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/even_regx3xx0x/CP (SDFCNQD1BWP16P90)
+                                                                     0.05      0.00      0.13 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/even_regx3xx0x/Q (SDFCNQD1BWP16P90)
+                                                                     0.02      0.06      0.19 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/even[0] (net)
+                                                    4      0.00
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U379/A1 (OAI21D1BWP20P90)
+                                                                     0.02      0.00      0.19 r
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/U379/ZN (OAI21D1BWP20P90)
+                                                                     0.02      0.02      0.21 f
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_N1 (net)
+                                                    2      0.00
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_even_regx0xx0x/D (SDFCNQD1BWP16P90)
+                                                                     0.02      0.00      0.21 f
+  data arrival time                                                                      0.21
+
+  clock CLK (rise edge)                                                        0.00      0.00
+  clock network delay (propagated)                                             0.18      0.18
+  clock reconvergence pessimism                                               -0.00      0.18
+  dct_8_2d_inst/COL_DCT_GENx4x_col_dct_inst/dct_even_inst_even_regx0xx0x/CP (SDFCNQD1BWP16P90)
+                                                                     0.14      0.00      0.18 r
+  library hold time                                                            0.02      0.20
+  data required time                                                                     0.20
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.20
+  data arrival time                                                                     -0.21
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1

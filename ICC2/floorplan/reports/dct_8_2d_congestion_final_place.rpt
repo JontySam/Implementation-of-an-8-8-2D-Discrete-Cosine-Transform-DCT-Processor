@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Tue Dec  3 01:37:35 2024
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |    4834 |    12 |    3108  ( 2.01%) |       1
+H routing |    2769 |    12 |    1395  ( 1.81%) |       1
+V routing |    2065 |     8 |    1713  ( 2.22%) |       1
+
+1

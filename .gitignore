@@ -1,0 +1,17 @@
+# Synopsys / Cadence / EDA Junk
+synopsys_cache/
+*.svf
+*.log
+*.pvl
+*.syn
+*.mr
+*.pvk
+work/
+INCA_libs/
+*.vcd
+*.vpd
+alib-52/
+
+# OS Junk
+Thumbs.db
+.DS_Store

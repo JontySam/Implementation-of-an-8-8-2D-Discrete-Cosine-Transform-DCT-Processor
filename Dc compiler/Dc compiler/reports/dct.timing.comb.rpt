@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group comb
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 21:43:48 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: size[1] (input port clocked by CLK)
+  Endpoint: y1[0] (output port clocked by CLK)
+  Path Group: comb
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dct                ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  scaling2_WIDTH26   ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock CLK (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  input external delay                                         0.02       0.02 r
+  size[1] (in)                                       0.02      0.02       0.04 r
+  size[1] (net)                  6         0.01                0.00       0.04 r
+  st2/size[1] (scaling2_WIDTH26)                               0.00       0.04 r
+  st2/size[1] (net)                        0.01                0.00       0.04 r
+  st2/U1/I (CKND1BWP20P90)                           0.02      0.00       0.04 r
+  st2/U1/ZN (CKND1BWP20P90)                          0.11      0.07       0.11 f
+  st2/n571 (net)                34         0.03                0.00       0.11 f
+  st2/U1907/A1 (NR2D1BWP20P90)                       0.11      0.00       0.11 f
+  st2/U1907/ZN (NR2D1BWP20P90)                       0.24      0.18       0.28 r
+  st2/n561 (net)                48         0.04                0.00       0.28 r
+  st2/U1909/I (BUFFD1BWP20P90)                       0.24      0.00       0.28 r
+  st2/U1909/Z (BUFFD1BWP20P90)                       0.28      0.19       0.47 r
+  st2/n1076 (net)               95         0.08                0.00       0.47 r
+  st2/U65/I (BUFFD1BWP20P90)                         0.28      0.00       0.47 r
+  st2/U65/Z (BUFFD1BWP20P90)                         0.24      0.17       0.64 r
+  st2/n1074 (net)               83         0.07                0.00       0.64 r
+  st2/U348/A1 (AOI22D1BWP20P90)                      0.24      0.00       0.64 r
+  st2/U348/ZN (AOI22D1BWP20P90)                      0.05      0.03       0.68 f
+  st2/n282 (net)                 1         0.00                0.00       0.68 f
+  st2/U1085/A1 (ND2D1BWP20P90)                       0.05      0.00       0.68 f
+  st2/U1085/ZN (ND2D1BWP20P90)                       0.02      0.03       0.70 r
+  st2/y1[0] (net)                1         0.00                0.00       0.70 r
+  st2/y1[0] (scaling2_WIDTH26)                                 0.00       0.70 r
+  y1[0] (net)                              0.00                0.00       0.70 r
+  y1[0] (out)                                        0.02      0.00       0.70 r
+  data arrival time                                                       0.70
+
+  clock CLK (rise edge)                                        1.20       1.20
+  clock network delay (ideal)                                  0.00       1.20
+  output external delay                                       -0.06       1.14
+  data required time                                                      1.14
+  -------------------------------------------------------------------------------
+  data required time                                                      1.14
+  data arrival time                                                      -0.70
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.44
+
+
+1
+LOGNAME = chint078

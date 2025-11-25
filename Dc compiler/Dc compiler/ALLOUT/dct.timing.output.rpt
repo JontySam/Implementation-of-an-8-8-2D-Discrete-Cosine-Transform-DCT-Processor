@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -group output
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : dct
+Version: U-2022.12-SP5
+Date   : Sun Oct 27 03:49:31 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c_ccs
+Wire Load Model Mode: segmented
+
+  Startpoint: dct32_etapa2_shift_add32_1_y5_regx31x
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: y5[22] (output port clocked by CLK)
+  Path Group: output
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dct8puntos_WIDTH_X32_WIDTH_Y32_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+  transpuesta_WIDTH32_test_1 ZeroWireload  N16ADFP_StdCelltt0p8v25c_ccs
+  dct                ZeroWireload          N16ADFP_StdCelltt0p8v25c_ccs
+  dct32_WIDTH_X16_WIDTH_Y32_test_1 ZeroWireload N16ADFP_StdCelltt0p8v25c_ccs
+
+  Point                                              Fanout       Cap     Trans      Incr       Path
+  -----------------------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                                              0.00       0.00
+  clock network delay (ideal)                                                        0.00       0.00
+  dct32_etapa2_shift_add32_1_y5_regx31x/CP (SDFQD1BWP20P90)                0.00      0.00 #     0.00 r
+  dct32_etapa2_shift_add32_1_y5_regx31x/Q (SDFQD1BWP20P90)                 0.03      0.06       0.06 f
+  y5[29] (net)                                         5         0.01                0.00       0.06 f
+  U17022/I (INVD1BWP20P90)                                                 0.03      0.00       0.06 f
+  U17022/ZN (INVD1BWP20P90)                                                0.03      0.03       0.09 r
+  n29547 (net)                                         9         0.01                0.00       0.09 r
+  U27380/B2 (OAI22D1BWP20P90)                                              0.03      0.00       0.09 r
+  U27380/ZN (OAI22D1BWP20P90)                                              0.06      0.03       0.12 f
+  y5[22] (net)                                         1         0.00                0.00       0.12 f
+  y5[22] (out)                                                             0.06      0.00       0.12 f
+  data arrival time                                                                             0.12
+
+  clock CLK (rise edge)                                                              1.20       1.20
+  clock network delay (ideal)                                                        0.00       1.20
+  output external delay                                                             -0.06       1.14
+  data required time                                                                            1.14
+  -----------------------------------------------------------------------------------------------------
+  data required time                                                                            1.14
+  data arrival time                                                                            -0.12
+  -----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                   1.02
+
+
+1
+LOGNAME = chint078

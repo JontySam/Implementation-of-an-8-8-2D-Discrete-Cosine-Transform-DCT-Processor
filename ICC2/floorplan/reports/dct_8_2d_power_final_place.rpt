@@ -1,0 +1,51 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : full_chip_dct_8_2d
+Version: R-2020.09-SP6
+Date   : Tue Dec  3 01:37:34 2024
+****************************************
+Information: Activity for scenario default was cached, no propagation required. (POW-005)
+Mode: default
+Corner: default
+Scenario: default
+Voltage: 0.80
+Temperature: 25.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1nW
+Leakage Power Unit   : 1nW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = 1.43e+07 nW ( 73.0%)
+  Net Switching Power    = 5.28e+06 nW ( 27.0%)
+Total Dynamic Power      = 1.95e+07 nW (100.0%)
+
+Cell Leakage Power       = 3.88e+04 nW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             1.16e+07               2.69e+06               2.33e+03               1.43e+07    ( 73.2%)         
+register                  1.04e+06               6.87e+05               1.67e+04               1.75e+06    (  8.9%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             1.59e+06               1.89e+06               1.97e+04               3.50e+06    ( 17.9%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.43e+07 nW            5.28e+06 nW            3.88e+04 nW            1.96e+07 nW
+1
